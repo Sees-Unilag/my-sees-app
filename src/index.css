@@ -1,8 +1,20 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: "Just_a_Matter_of_Caps";
+  src: local("Just_a_Matter_of_Caps"),
+  url("./fonts/Just_a_Matter_of_Caps/Just_a_Matter_of_Caps.ttf"), format("truetype");
 }
 
 

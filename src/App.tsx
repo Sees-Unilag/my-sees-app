@@ -1,8 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
+import { Navbar } from "./components";
 
 function App() {
-  return <div>My Sees App</div>;
+  return <div>
+    <Navbar />
+  </div>;
 }
 
 export default App;
