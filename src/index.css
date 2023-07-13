@@ -14,7 +14,7 @@ body {
 @font-face{
   font-family: "Just_a_Matter_of_Caps";
   src: local("Just_a_Matter_of_Caps"),
-  url("./fonts/Just_a_Matter_of_Caps/Just_a_Matter_of_Caps.ttf"), format("truetype");
+  url("./asset/fonts/Just_a_Matter_of_Caps/Just_a_Matter_of_Caps.ttf"), format("truetype");
 }
 
 

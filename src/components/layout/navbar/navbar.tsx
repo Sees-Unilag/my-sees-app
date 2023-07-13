@@ -1,11 +1,11 @@
 // import NavBg from '../../../images/NavBar/NavBg.png'
 import styles from './navbar.module.css'
-import Logo from '../../../images/NavBar/seesLogo.png'
-import Home from '../../../images/NavBar/home.png'
-import Level from '../../../images/NavBar/level.png'
-import Settings from '../../../images/NavBar/setting.png'
-import Uploads from '../../../images/NavBar/upload.png'
-import Notification from '../../../images/NavBar/notification.png'
+import Logo from '../../../asset/images/NavBar/seesLogo.png'
+import Home from '../../../asset/images/NavBar/home.png'
+import Level from '../../../asset/images/NavBar/level.png'
+import Settings from '../../../asset/images/NavBar/setting.png'
+import Uploads from '../../../asset/images/NavBar/upload.png'
+import Notification from '../../../asset/images/NavBar/notification.png'
 
 export const Navbar = () => {
   return (

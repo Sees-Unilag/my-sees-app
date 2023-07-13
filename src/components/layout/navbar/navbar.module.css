@@ -13,7 +13,7 @@ ul{
  border-top-right-radius: 15px;
 }
 .navContainer{
- background-image: url('../../../images/NavBar/navMobileBg.png');
+ background-image: url('../../../asset/images/NavBar/navMobileBg.png');
  background-size: cover;
  background-repeat: no-repeat no-repeat;
  background-position: center;
@@ -71,7 +71,7 @@ ul{
   border-radius: 0;
  }
  .navContainer{
-  background-image: url('../../../images/NavBar/NavBg.png');
+  background-image: url('../../../asset/images/NavBar/NavBg.png');
  }
   .navLogoDiv{
   padding-top: 35px;
