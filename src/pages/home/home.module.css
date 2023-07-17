@@ -1,0 +1,9 @@
+.trendingCard {
+  border-radius: 44px;
+  padding: 2.375rem;
+  background: linear-gradient(0deg, #011d35 0%, rgba(1, 29, 53, 0.31) 100%);
+}
+
+.trendingCard img {
+  border-radius: 23px;
+}
