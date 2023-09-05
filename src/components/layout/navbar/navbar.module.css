@@ -11,6 +11,8 @@ ul{
  background-color: #011D35;
  border-top-left-radius: 15px;
  border-top-right-radius: 15px;
+ width: 100vw;
+ z-index: 7;
 }
 .navContainer{
  background-image: url('../../../asset/images/NavBar/navMobileBg.png');
@@ -28,6 +30,9 @@ ul{
 .navUl{
  padding: 12px 16px;
 }
+.Link{
+  text-decoration: none;
+}
 .navLi{
  font-family: "Just_a_Matter_of_Caps";
  font-size: 14px;
@@ -38,6 +43,7 @@ ul{
  position: relative;
  cursor: pointer;
  font-weight: 400;
+ text-decoration: none;
 }
 
 .navLiActive{
@@ -64,6 +70,13 @@ ul{
  object-fit: cover;
  margin-bottom: 4px;
 }
+@media only screen and (min-width: 500px){
+  .navUl{
+    padding: 12px 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-width: 992px){
 	.aside{
   width: fit-content !important;
@@ -75,22 +88,28 @@ ul{
  }
   .navLogoDiv{
   padding-top: 35px;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
  }
  .navLogoImg{
   width: 45px;
   height: 45px;
   object-fit: cover;
  }
+ .Link{
+  align-self: stretch;
+ }
  .navUl{
+  width: 100%;
+  margin: 0;
   padding: 0;
  }
  .navLi{
-  align-self: stretch;
   padding: 0px 10px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-size: 16px;
   position: relative;
+  list-style: none;
+  text-decoration: none;
  }
  .navLi::after{
   content: '';
