@@ -8,6 +8,7 @@ import {
 import { Base } from "../components";
 import Home from "../pages/home/Home";
 import Level from "../pages/level/Level";
+import Upload from "../pages/uploads/Upload";
 
 export const MainRoutes = () => {
   return (
@@ -18,6 +19,9 @@ export const MainRoutes = () => {
         </Route>
         <Route path="/levels" element={<Base />}>
           <Route index element={<Level />} />
+        </Route>
+        <Route path="/uploads" element={<Base />}>
+          <Route index element={<Upload />} />
         </Route>
       </Routes>
     </Router>
