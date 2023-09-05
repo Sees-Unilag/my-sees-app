@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { Base } from "../components";
 import Home from "../pages/home/Home";
+import Level from "../pages/level/Level";
 
 export const MainRoutes = () => {
   return (
@@ -14,6 +15,9 @@ export const MainRoutes = () => {
       <Routes>
         <Route path="/" element={<Base />}>
           <Route index element={<Home />} />
+        </Route>
+        <Route path="/levels" element={<Base />}>
+          <Route index element={<Level />} />
         </Route>
       </Routes>
     </Router>
