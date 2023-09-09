@@ -3,8 +3,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin-left: 200px;
-  margin-top: 40px;
   gap: 20px;
 }
 .uploadmaterials {

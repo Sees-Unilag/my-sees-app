@@ -15,18 +15,15 @@ export const MainRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Base />}>
-          <Route index element={<Home />} />
+        <Route element={<Base />}>
+          <Route index path="/" element={<Home />} />
+          <Route path="/levels" element={<Level />} />
+          <Route path="/levels?year=1" element={<>Year 1</>} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/notification" element={<Notification />} />
         </Route>
-        <Route path="/levels" element={<Base />}>
-          <Route index element={<Level />} />
-        </Route>
-        <Route path="/uploads" element={<Base />}>
-          <Route index element={<Upload />} />
-        </Route>
-        <Route path="/notification" element={<Base />}>
-          <Route index element={<Notification />} />
-        </Route>
+
+        <Route path="*" element={<> 404 Not Found</>} />
       </Routes>
     </Router>
   );

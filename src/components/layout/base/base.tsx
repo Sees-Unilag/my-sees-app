@@ -9,12 +9,12 @@ interface IProps {
 
 export const Base: React.FC<IProps> = ({ children }) => {
   return (
-    <main>
-      <Header />
+    <main className={styles.baseContainer}>
       <div className={styles.sideNav}>
         <Navbar />
       </div>
       <main className={styles.appContent}>
+        <Header />
         {children}
         <Outlet />
       </main>
