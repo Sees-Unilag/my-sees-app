@@ -12,14 +12,6 @@ const Home = () => {
         </div>
         <div className="col-lg-6"></div>
       </section>
-      <section className="row">
-        <div className="col-lg-6">
-          <div className={styles.trendingCard}>
-            <img src={ITDefense} className="img-fluid" alt="IT Defense" />
-          </div>
-        </div>
-        <div className="col-lg-6"></div>
-      </section>
     </section>
   );
 };
