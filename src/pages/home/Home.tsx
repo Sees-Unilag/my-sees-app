@@ -3,7 +3,7 @@ import ITDefense from "../../asset/images/IT-defense.png";
 
 const Home = () => {
   return (
-    <section className="container">
+    <section className="">
       <section className="row">
         <div className="col-lg-6">
           <div className={styles.trendingCard}>
