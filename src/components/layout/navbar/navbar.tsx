@@ -31,8 +31,8 @@ export const Navbar = () => {
           className={`text-white d-flex align-items-center justify-content-between flex-lg-column ${styles.navUl}`}
         >
           {navlinks}
-        </ul>
+        </ul> 
       </div>
     </aside>
-  );
+  ); 
 };
