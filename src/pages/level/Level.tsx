@@ -4,15 +4,9 @@ import Logo from "./logo.png";
 import { useState } from "react";
 
 const Level = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
   return (
     <div>
       <nav className={styles.navbar}>
-        <img src={Logo} alt="Logo" />
         <div className={styles.logo}>
           <a href="/">OUR LEVELS</a>
         </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./banner.module.css";
 import Logo from "./logo.png";
+import { FaChevronDown } from "react-icons/fa";
 
 export const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -17,7 +18,7 @@ export const Header = () => {
       </div>
       <div>
         <ul className={styles.menu}>
-          <li style={{ paddingTop: "20px" }}>
+          {/* <li style={{ paddingTop: "20px" }}>
             <a href="#Social">Social</a>
           </li>
           <li style={{ paddingTop: "20px" }}>
@@ -25,7 +26,7 @@ export const Header = () => {
           </li>
           <li style={{ paddingTop: "20px" }}>
             <a href="#Business">Business</a>
-          </li>
+  </li>*/}
           <li style={{ paddingTop: "10px" }}>
             <button title="Toggle Dropdown" className={styles.Courses}>
               <a href="#Courses">Courses</a>
@@ -36,11 +37,11 @@ export const Header = () => {
 
       <div className={styles.dropdown}>
         <button onClick={toggleDropdown} className={styles.dropdownToggle}>
-          <span className={styles.dropdownIcon}></span>
+          <FaChevronDown className="dropdownIcon" />
         </button>
         {isDropdownOpen && (
           <ul className={styles.dropdownMenu}>
-            <li>
+            {/* <li>
               <a href="/Social">Social</a>
             </li>
             <li>
@@ -48,7 +49,7 @@ export const Header = () => {
             </li>
             <li>
               <a href="/Business">Business</a>
-            </li>
+        </li>*/}
             <li style={{ paddingTop: "10px" }}>
               <button className={styles.Courses}>
                 <a href="#Courses">Courses</a>
