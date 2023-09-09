@@ -12,8 +12,8 @@ export const Header = () => {
 
   return (
     <nav className={styles.navbar}>
-      <img src={Logo} alt="Logo" />
-      <div className={styles.logo}>
+      <img src={Logo} alt="Logo" className={styles.logo_id} />
+      <div className={styles.text_logo}>
         <a href="/">MY ELECTRICAL APP</a>
       </div>
       <div>
