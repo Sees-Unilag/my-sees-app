@@ -1,128 +1,127 @@
 .container {
- width: 90%;
- margin: 0 auto;
- margin-top: 38px;
-}
-.levelHeader{
- font-size: 20px;
- font-weight: 700;
- font-family: Poppins;
- color: #000;
- margin-bottom: 24px;
-}
-.courseContainer{
- font-family: Poppins;
- color: #000;
- margin-bottom: 16px;
-}
-.courseNameDiv{
- background: linear-gradient(180deg, rgba(146, 215, 41, 0.24) 0%, rgba(141, 229, 189, 0.29) 100%);
- height: 3rem;
- width: 75%;
- max-width: 75%;
- overflow: hidden;
- white-space: nowrap;
- cursor: pointer;
-}
-.courseNameContainer{
- margin-left: 16px;
- width: fit-content;
- text-overflow: clip;
- position: relative;
- top: 50%;
- height: fit-content;
- transform: translateY(-50%);
-
-}
-.courseName{
- font-size: 14px;
- font-weight: 500;
- line-height: normal;
-}
-.scroll{
-  animation: scroll-rt2 5s linear infinite both;
-}
-.courseUnitDiv{
- background: linear-gradient(180deg, rgba(54, 206, 138, 0.57) 0%, rgba(141, 229, 189, 0.29) 100%);
- padding: 0rem 1.59rem;
- height: 3rem;
- display: flex;
-}
-.courseUnit{
- color: #000;
- font-family: Poppins;
- font-size: 1rem;
- font-style: normal;
- font-weight: 700;
- line-height: 1;
- height: fit-content;
- position: relative;
- top: 50%;
- transform: translateY(-50%);
- 
-}
-@keyframes scroll-rtl {
- 0% {
-   transform: translate(0, -50%);
- }
- 100% {
-   transform: translate(-30%, -50%);
- }
-}
-@keyframes scroll-rt2 {
- 0% {
-   transform: translate(0, -50%);
- }
- 100% {
-   transform: translate(-55%, -50%);
- }
-}
-@media only screen and (min-width: 992px){
- .container{
-  width:fit-content;
-  text-align: center;
-  margin: 0;
-  margin-left: 200px;
- }
- .scroll{
-  animation: none;
- }
- @media (hover:hover){
-  .scroll:hover{
-    animation: scroll-rtl 3s linear infinite both;
-   }
-}
-.courseContainer{
-  margin-bottom: 1.81rem;
-}
- .courseNameDiv{
-  width: 546px;
-  max-width: 546px;
-  margin-right: 34px;
-  height: 3.75rem;
-  position: relative;
- }
- .courseNameDiv::after{
-  content:  '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  border-radius: 0px 7.333px 7.333px 0px;
-  background: rgba(54, 206, 138, 0.6);
-  z-index: 50;
- }
- .courseName{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2.25rem;
+ }                                                      
+ .levelHeader{
   font-size: 1.25rem;
   font-weight: 700;
+  font-family: Poppins;
+  color: #000;
+  margin-bottom: 1.5rem;
+ }
+ .courseContainer{
+  font-family: Poppins;
+  color: #000;
+  margin-bottom: 1rem;
+ }
+ .courseNameDiv{
+  background: linear-gradient(180deg, rgba(146, 215, 41, 0.24) 0%, rgba(141, 229, 189, 0.29) 100%);
+  height: 3rem;
+  width: 75%;
+  max-width: 75%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+ }
+ .courseNameContainer{
+  margin-left: 1rem;
+  width: fit-content;
+  text-overflow: clip;
+  height: fit-content;
+ }
+ .courseName{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+ }
+ .scroll{
+   animation: scroll-rt2 5s linear infinite both;
  }
  .courseUnitDiv{
-  padding: 0 1.88rem;
-  height: 3.75rem;
-
+  background: linear-gradient(180deg, rgba(54, 206, 138, 0.57) 0%, rgba(141, 229, 189, 0.29) 100%);
+  padding: 0rem 1.59rem;
+  height: 3rem;
+  display: flex;
  }
  .courseUnit{
-  font-size: 1.5625rem;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  height: fit-content;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  
  }
-}
+ @keyframes scroll-rtl {
+  0% {
+    transform: translate(0, -50%);
+  }
+  100% {
+    transform: translate(-30%, -50%);
+  }
+ }
+ @keyframes scroll-rt2 {
+  0% {
+    transform: translate(0, -50%);
+  }
+  100% {
+    transform: translate(-55%, -50%);
+  }
+ }
+ @media only screen and (min-width: 992px){
+  .container{
+   width:fit-content;
+   text-align: center;
+   margin: 0;
+   margin-left: 200px;
+  }
+  .scroll{
+   animation: none;
+  }
+  @media (hover:hover){
+   .scroll:hover{
+     animation: scroll-rtl 3s linear infinite both;
+    }
+ }
+ .courseContainer{
+   margin-bottom: 1.81rem;
+ }
+  .courseNameDiv{
+   width: 546px;
+   max-width: 546px;
+   margin-right: 34px;
+   height: 3.75rem;
+   position: relative;
+  }
+  .courseNameDiv::after{
+   content:  '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 4px;
+   height: 100%;
+   border-radius: 0px 7.333px 7.333px 0px;
+   background: rgba(54, 206, 138, 0.6);
+   z-index: 50;
+  }
+  .courseName{
+   font-size: 1.25rem;
+   font-weight: 700;
+  }
+  .courseUnitDiv{
+   padding: 0 1.88rem;
+   height: 3.75rem;
+ 
+  }
+  .courseUnit{
+   font-size: 1.5625rem;
+  }
+ }

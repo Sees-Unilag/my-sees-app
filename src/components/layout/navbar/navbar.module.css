@@ -9,8 +9,8 @@ ul{
 }
 .aside{
  background-color: #011D35;
- border-top-left-radius: 15px;
- border-top-right-radius: 15px;
+ border-top-left-radius: 0.9375rem;
+ border-top-right-radius: 0.9375rem;
  width: 100vw;
  z-index: 7;
 }
@@ -19,23 +19,23 @@ ul{
  background-size: cover;
  background-repeat: no-repeat no-repeat;
  background-position: center;
- border-top-left-radius: 15px;
- border-top-right-radius: 15px;
+ border-top-left-radius: 0.9375rem;
+ border-top-right-radius: 0.9375rem;
 }
 .navLogoImg{
- width: 45px;
- height: 45px;
+ width: 2.8125rem;
+ height: 2.8125rem;
  object-fit: cover;
 }
 .navUl{
- padding: 12px 16px;
+ padding: 1rem 1rem;
 }
 .Link{
   text-decoration: none;
 }
 .navLi{
  font-family: "Just_a_Matter_of_Caps";
- font-size: 14px;
+ font-size: 0.875rem;
  display: flex;
  flex-direction: column;
  line-height: 1;
@@ -52,11 +52,12 @@ ul{
 .navLiActive::after{
  content: '';
  position: absolute;
- height: 4px;
- width: 36px;
+ height: 0.25rem;
+ max-height: 0.25rem;
+ width: 2.25rem;
  background: #36CE8A; 
  border-radius: 0px 7.333px 7.333px 0px;
- bottom: -12px;
+ bottom: -0.75rem;
  left: 50%;
  transform: translateX(-50%);
 }
@@ -65,14 +66,14 @@ ul{
 }
 
 .navLiImg{
- width: 16px;
- height: 16px;
+ width: 1rem;
+ height: 1rem;
  object-fit: cover;
- margin-bottom: 4px;
+ margin-bottom: 0.25rem;
 }
 @media only screen and (min-width: 500px){
   .navUl{
-    padding: 12px 0;
+    padding: 0.75rem 0;
     width: 90%;
     margin: 0 auto;
   }
@@ -81,6 +82,7 @@ ul{
 	.aside{
   width: fit-content !important;
   height: 100dvh;
+  height: 100vh;
   border-radius: 0;
  }
  .navContainer{
@@ -91,8 +93,8 @@ ul{
   margin-bottom: 85px;
  }
  .navLogoImg{
-  width: 45px;
-  height: 45px;
+  width: 2.74819rem;
+  height: 2.71963rem;
   object-fit: cover;
  }
  .Link{
@@ -104,9 +106,9 @@ ul{
   padding: 0;
  }
  .navLi{
-  padding: 0px 10px;
-  margin-bottom: 50px;
-  font-size: 16px;
+  padding: 0px 0.625rem;
+  margin-bottom: 4.2rem;
+  font-size: 1rem;
   position: relative;
   list-style: none;
   text-decoration: none;
@@ -115,7 +117,8 @@ ul{
   content: '';
   position: absolute;
   height: 0;
-  width: 4px;
+  max-height: none;
+  width: 0.25rem;
   background: #36CE8A; 
   border-radius: 0px 7.333px 7.333px 0px;
   top: 0;
@@ -129,14 +132,14 @@ ul{
   content: '';
   position: absolute;
   height: 100%;
-  width: 8px;
+  width: 0.5rem;
   background: #36CE8A; 
   border-radius: 0px 7.333px 7.333px 0px;
   top: 0;
   left: 0;
  }
  .navLiImg{
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
  }
 }
