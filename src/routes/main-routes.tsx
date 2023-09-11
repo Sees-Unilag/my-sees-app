@@ -10,7 +10,8 @@ import Home from "../pages/home/Home";
 // import Level from "../pages/level/Level";
 import Upload from "../pages/uploads/Upload";
 import Notification from "../pages/notification/Notification";
-import { Level } from "../components/lib/Level";
+import Level from "../pages/level/Level";
+
 
 export const MainRoutes = () => {
   return (

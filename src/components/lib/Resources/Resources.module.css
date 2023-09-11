@@ -1,7 +1,8 @@
 .container{
- width: 90%;
+ width: 100%;
  margin: 0 auto;
  margin-top: 3.05rem;
+ height: auto;
 }
 .header{
  font-size: 1.25rem;
@@ -41,7 +42,6 @@
   width: fit-content;
   margin: 0;
   margin-top: 0;
-  margin-left: 200px;
  }
  .header{
   font-size: 1.5625rem;
@@ -51,8 +51,8 @@
   row-gap: 1.81rem;
  }
  .ResourceContainer{
-  width: 31.3125rem;
-  max-width: 31.3125rem;
+  width: calc(31.3125rem + 10%);
+  max-width: calc(31.3125rem + 10%);
   height: 3.75rem;
   position: relative;
  }

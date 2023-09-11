@@ -23,23 +23,21 @@
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  display: flex;
-  align-items: center;
  }
  .courseNameContainer{
   margin-left: 1rem;
   width: fit-content;
   text-overflow: clip;
   height: fit-content;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
  }
  .courseName{
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   margin: 0;
- }
- .scroll{
-   animation: scroll-rt2 5s linear infinite both;
  }
  .courseUnitDiv{
   background: linear-gradient(180deg, rgba(54, 206, 138, 0.57) 0%, rgba(141, 229, 189, 0.29) 100%);
@@ -58,39 +56,14 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  
  }
- @keyframes scroll-rtl {
-  0% {
-    transform: translate(0, -50%);
-  }
-  100% {
-    transform: translate(-30%, -50%);
-  }
- }
- @keyframes scroll-rt2 {
-  0% {
-    transform: translate(0, -50%);
-  }
-  100% {
-    transform: translate(-55%, -50%);
-  }
- }
+ 
  @media only screen and (min-width: 992px){
   .container{
    width:fit-content;
    text-align: center;
    margin: 0;
-   margin-left: 200px;
   }
-  .scroll{
-   animation: none;
-  }
-  @media (hover:hover){
-   .scroll:hover{
-     animation: scroll-rtl 3s linear infinite both;
-    }
- }
  .courseContainer{
    margin-bottom: 1.81rem;
  }
