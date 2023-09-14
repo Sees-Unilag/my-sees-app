@@ -61,9 +61,6 @@
     width: 500px;
     justify-content: flex-start;
     gap: 20px;
-    margin-left: 100px;
-    margin-top: 50px;
-    margin-bottom: 100px;
   }
   .year {
     width: 120px;
@@ -78,8 +75,6 @@
     width: 400px;
     justify-content: flex-start;
     gap: 20px;
-    margin-left: 30px;
-    margin-top: 50px;
   }
   .year {
     width: 100px;
@@ -95,11 +90,9 @@
   .menu {
     display: flex;
     flex-wrap: wrap;
-    width: 278px;
+    /* width: 278px; */
     justify-content: flex-start;
     gap: 25px;
-    margin-left: 50px;
-    margin-bottom: 90px;
   }
   .year {
     width: 100px;
