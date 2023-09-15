@@ -4,9 +4,9 @@ import { useRef, useState, useEffect, useCallback} from 'react';
 import aniStyles from './animation.module.css'
 
 export const Course = () => {
-    // state reprensenting the course name container
+    // state reprensenting the width of the course name container
   const [ containerWidth, setContainerWidth ] = useState(0) 
-  // state reprensenting the width of course container
+  // state reprensenting the width of course name
   const [width, setWidth] = useState(0)
   // state reperensenting the size of the window
   const [windowWidth, setWindowWidth] = useState(getWindowSize());
@@ -43,7 +43,7 @@ export const Course = () => {
     const {innerWidth} = window;
     return innerWidth;
   }
-  
+
   const measuredWidthRef = useCallback((node: HTMLDivElement) => {
     if(node !== null){
       setWidth(node.getBoundingClientRect().width)
