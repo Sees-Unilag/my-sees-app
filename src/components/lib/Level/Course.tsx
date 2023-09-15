@@ -43,6 +43,7 @@ export const Course = () => {
     const {innerWidth} = window;
     return innerWidth;
   }
+  
   const measuredWidthRef = useCallback((node: HTMLDivElement) => {
     if(node !== null){
       setWidth(node.getBoundingClientRect().width)

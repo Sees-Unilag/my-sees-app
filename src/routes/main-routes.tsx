@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import { Base } from "../components";
 import Home from "../pages/home/Home";
-// import Level from "../pages/level/Level";
 import Upload from "../pages/uploads/Upload";
 import Notification from "../pages/notification/Notification";
 import Level from "../pages/level/Level";
