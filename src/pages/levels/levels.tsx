@@ -1,12 +1,10 @@
 import styles from "./levels.module.css";
 import Frame from "./Frame.svg";
-import Logo from "./logo.png";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { allYears } from "../../mock-data";
-import { IYear } from "../../types";
 import { useNavigate } from "react-router-dom";
 
- const Levels = () => {
+export const Levels = () => {
   const navigate = useNavigate();
 
   const handleGoToLevel = (value: string) => {
@@ -36,5 +34,3 @@ import { useNavigate } from "react-router-dom";
     </section>
   );
 };
-
-export default Levels
