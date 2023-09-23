@@ -1,125 +1,133 @@
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
-  background-color: white;
-  color: #eee;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2.25rem;
 }
 
-.navbar a {
-  text-decoration: none;
+.levelHeader {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Poppins;
   color: #000;
-  font-family: Just_a_Matter_of_Caps;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  margin-bottom: 1.5rem;
 }
 
-.logo {
+.sidepan {
+  width: 220px;
+  border-right: 1px solid #c4c4c4;
+  margin: 0 3.56rem 0 0;
+}
+
+.yearContainer {
+  margin-bottom: 4.5rem;
+}
+
+.yearContainer .iconHolder {
+  width: 1.56rem;
+  height: 1.56rem;
+  border-radius: 50%;
+  background-color: rgba(54, 206, 138, 0.57);
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px;
-  justify-content: flex-start;
-  gap: 20px;
+.selectedYear {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  font-family: 400;
+  text-transform: capitalize;
 }
 
-.year {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 20px;
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 30px;
-  width: 182px;
-  height: 144px;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 28px;
-  background: rgba(167, 223, 83, 0.1);
-  box-shadow: 4px 4px 20px 0px rgba(128, 128, 128, 0.25);
+.semesterList {
+  padding: 0;
+  margin: 0;
 }
 
-@media only screen and (max-width: 1250px) {
+.semesterList li {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.75rem 0;
+  transition: 0.3s all ease;
+  cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
-  .logo {
+
+.semesterList li:first-child {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.semesterList li.active {
+  color: #011d35;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: fit-content;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sidepan {
+    width: 100%;
+    border-right: none;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .yearContainer {
+    width: 100%;
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
-    margin-left: 0px;
+    justify-content: center;
+    text-align: center;
   }
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    justify-content: flex-start;
-    gap: 20px;
-  }
-  .year {
-    width: 120px;
-    height: 114px;
-  }
-}
 
-@media only screen and (max-width: 575px) {
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    justify-content: flex-start;
-    gap: 20px;
+  .yearContainer .iconHolder {
+    margin: 0 auto 0 0;
   }
-  .year {
-    width: 100px;
-  }
-  .logo {
+
+  .semesterList {
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
-    margin-left: 0px;
+    justify-content: center;
+    gap: 0 1.5rem;
   }
-}
 
-@media only screen and (max-width: 450px) {
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 278px; */
-    justify-content: flex-start;
-    gap: 25px;
+  .semesterList li {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.875rem;
+    padding: 0.75rem 0;
+    transition: 0.3s all ease;
+    cursor: pointer;
   }
-  .year {
-    width: 100px;
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 0px;
-  }
-}
 
-@media only screen and (max-width: 320px) {
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    width: 228px;
-    justify-content: flex-start;
-    gap: 25px;
-    margin-left: 40px;
-    margin-bottom: 90px;
+  .semesterList li::after {
+    content: " ";
+    height: 3px;
+    width: 50%;
+    background-color: transparent;
+    display: block;
+    margin: 0.25rem auto 0;
+    transition: 0.5s all ease-in-out;
   }
-  .year {
-    width: 100px;
+
+  .semesterList li:first-child {
+    border-bottom: none;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 0px;
+
+  .semesterList li.active {
+    font-weight: 500;
+    color: #011d35;
+  }
+
+  .semesterList li.active::after {
+    background-color: #36ce8a;
   }
 }
