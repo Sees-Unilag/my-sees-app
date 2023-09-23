@@ -7,7 +7,6 @@ import { useQuery } from "@tanstack/react-query";
 import { getAllCourses } from "../../api";
 
 export const Level = () => {
-  const navigate = useNavigate();
   const [semester, setSemester] = React.useState<string>("first");
   const params = useParams();
   const selectedYear = params.year;
@@ -26,8 +25,6 @@ export const Level = () => {
   );
 
   if (error) console.error(error);
-
-  if (data) console.log("[data]", data);
 
   const courses = data ? data.data : [];
 
