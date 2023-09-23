@@ -1,9 +1,19 @@
 import styles from "./level.module.css";
 import Frame from "./Frame.svg";
 import Logo from "./logo.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { getAllCourses } from "../../api";
 
 const Level = () => {
+  // const { isLoading, data, error } = useQuery(["courses"], getAllCourses);
+
+  // if (isLoading) return <>Loading...</>;
+
+  // if (error) console.error(error);
+
+  // if (data) console.log(data);
+
   return (
     <div>
       <nav className={styles.navbar}>
