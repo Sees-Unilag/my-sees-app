@@ -1,4 +1,4 @@
-import styles from "./levels.module.css";
+import styles from "./programmeLevel.module.css";
 import Frame from "./Frame.svg";
 import { allYears } from "../../mock-data";
 import { useNavigate } from "react-router-dom";
