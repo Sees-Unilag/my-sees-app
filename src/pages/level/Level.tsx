@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import styles from "./Level.module.css";
+import styles from "./level.module.css";
 import { Course, Loader } from "../../components";
 import { semesters, allYears } from "../../mock-data";
 import * as React from "react";
