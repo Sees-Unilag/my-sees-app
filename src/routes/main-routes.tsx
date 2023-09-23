@@ -9,7 +9,7 @@ import { Base } from "../components";
 import Home from "../pages/home/Home";
 import Upload from "../pages/uploads/Upload";
 import Notification from "../pages/notification/Notification";
-import { Levels } from "../pages/levels";
+import Levels from "../pages/programmeLevels/ProgrammeLevels";
 import { Level } from "../pages/level";
 
 export const MainRoutes = () => {

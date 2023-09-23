@@ -1,10 +1,9 @@
 import styles from "./levels.module.css";
 import Frame from "./Frame.svg";
-import React, { useState, useEffect } from "react";
 import { allYears } from "../../mock-data";
 import { useNavigate } from "react-router-dom";
 
-export const Levels = () => {
+const ProgrammeLevels = () => {
   const navigate = useNavigate();
 
   const handleGoToLevel = (value: string) => {
@@ -34,3 +33,5 @@ export const Levels = () => {
     </section>
   );
 };
+
+export default ProgrammeLevels;
