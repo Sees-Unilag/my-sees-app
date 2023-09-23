@@ -1,4 +1,4 @@
 export * from "./home";
-export * from "./level";
+export * from "./levels";
 export * from "./uploads";
 export * from "./notification";

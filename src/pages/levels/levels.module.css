@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: white;
+  color: #eee;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-family: Just_a_Matter_of_Caps;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.year {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  width: 182px;
+  height: 144px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 28px;
+  background: rgba(167, 223, 83, 0.1);
+  box-shadow: 4px 4px 20px 0px rgba(128, 128, 128, 0.25);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.year:hover {
+  transform: scale(1.035);
+}
+
+@media only screen and (max-width: 1250px) {
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .year {
+    width: 120px;
+    height: 114px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .year {
+    width: 100px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 278px; */
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  .year {
+    width: 100px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 228px;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-left: 40px;
+    margin-bottom: 90px;
+  }
+  .year {
+    width: 100px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+}

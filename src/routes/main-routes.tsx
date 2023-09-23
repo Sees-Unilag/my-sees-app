@@ -9,8 +9,8 @@ import { Base } from "../components";
 import Home from "../pages/home/Home";
 import Upload from "../pages/uploads/Upload";
 import Notification from "../pages/notification/Notification";
-import Level from "../pages/level/Level";
-
+import Levels from "../pages/levels/Levels";
+import { Level } from "../pages/level";
 
 export const MainRoutes = () => {
   return (
@@ -18,8 +18,8 @@ export const MainRoutes = () => {
       <Routes>
         <Route element={<Base />}>
           <Route index path="/" element={<Home />} />
-          <Route path="/levels" element={<Level />} />
-          <Route path="/levels?year=1" element={<>Year 1</>} />
+          <Route path="/levels" element={<Levels />} />
+          <Route path="/levels/:year" element={<Level />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/notification" element={<Notification />} />
         </Route>
