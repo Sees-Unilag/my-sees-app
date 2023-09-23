@@ -29,12 +29,7 @@ const Data : Array<menuData> = [
  {
   name: 'Uploads',
   img: Uploads,
-  routeName: '/uploads'
- },
- {
-  name: 'Settings',
-  img: Settings,
-  routeName: '/settings'
+  routeName: '/upload'
  },
 ]
 

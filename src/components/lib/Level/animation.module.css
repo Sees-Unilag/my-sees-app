@@ -1,0 +1,289 @@
+/* scroll ani animation  */
+.scroll0_5{
+ animation: scroll-type0_5 5s linear 1s infinite both;
+}
+.scroll1{
+ animation: scroll-type1 5s linear 1s infinite both;
+}
+.scroll1_5{
+ animation: scroll-type1_5 5s linear 1s infinite both;
+}
+.scroll2{
+ animation: scroll-type2 5s linear 1s infinite both;
+}
+.scroll2_5{
+ animation: scroll-type2_5 5s linear 1s infinite both;
+}
+.scroll3{
+ animation: scroll-type3 5s linear 1s infinite both;
+}
+.scroll3_5{
+ animation: scroll-type3_5 5s linear 1s infinite both;
+}
+.scroll4{
+ animation: scroll-type4 5s linear 1s infinite both;
+}
+.scroll4_5{
+ animation: scroll-type4_5 5s linear 1s infinite both;
+}
+.scroll5{
+ animation: scroll-type5 5s linear 1s infinite both;
+}
+.scroll5_5{
+ animation: scroll-type5_5 5s linear 1s infinite both;
+}
+.scroll6{
+ animation: scroll-type6 5s linear 1s infinite both;
+}
+.scroll6_5{
+ animation: scroll-type6_5 5s linear 1s infinite both;
+}
+.scroll7{
+ animation: scroll-type7 5s linear 1s infinite both;
+}
+.scroll7_5{
+ animation: scroll-type7_5 5s linear 1s infinite both;
+}
+/* different scroll ani keyframes  */
+@keyframes scroll-type0_5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-5%, -50%);
+ }
+}
+@keyframes scroll-typel {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-10%, -50%);
+ }
+}
+@keyframes scroll-typel_5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-15%, -50%);
+ }
+}
+@keyframes scroll-type2 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-20%, -50%);
+ }
+}
+@keyframes scroll-type2_5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-25%, -50%);
+ }
+}
+@keyframes scroll-type3 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-30%, -50%);
+ }
+}
+@keyframes scroll-type3_5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-35%, -50%);
+ }
+}
+@keyframes scroll-type4 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-40%, -50%);
+ }
+}
+@keyframes scroll-type4_5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-45%, -50%);
+ }
+}
+@keyframes scroll-type5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-50%, -50%);
+ }
+}
+@keyframes scroll-type5_5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-55%, -50%);
+ }
+}
+@keyframes scroll-type6 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-60%, -50%);
+ }
+}
+@keyframes scroll-type6-5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-65%, -50%);
+ }
+}
+@keyframes scroll-type7 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-70%, -50%);
+ }
+}
+@keyframes scroll-type7-5 {
+ 0% {
+   transform: translate(0, -50%);
+ }
+ 100% {
+   transform: translate(-75%, -50%);
+ }
+}
+@media only screen and (min-width: 992px){
+ .scroll0_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll0_5:hover{
+   animation: scroll-type0_5 3s linear infinite both;
+  }
+ }
+ .scroll1{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll1:hover{
+   animation: scroll-type1 3s linear infinite both;
+  }
+ }
+ .scroll1_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll1_5:hover{
+   animation: scroll-type1_5 3s linear infinite both;
+  }
+ }
+ .scroll2{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll2:hover{
+   animation: scroll-type2 3s linear infinite both;
+  }
+ }
+ .scroll2_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll2_5:hover{
+   animation: scroll-type2_5 3s linear infinite both;
+  }
+ }
+ .scroll3{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll3:hover{
+   animation: scroll-type3 3s linear infinite both;
+  }
+ }
+ .scroll3_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll3_5:hover{
+   animation: scroll-type3_5 3s linear infinite both;
+  }
+ }
+ .scroll4{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll4:hover{
+   animation: scroll-type4 3s linear infinite both;
+  }
+ }
+ .scroll4_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll4_5:hover{
+   animation: scroll-type4_5 3s linear infinite both;
+  }
+ }
+ .scroll5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll:hover{
+   animation: scroll-type5 3s linear infinite both;
+  }
+ }
+ .scroll5_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll5_5:hover{
+   animation: scroll-type5_5 3s linear infinite both;
+  }
+ }
+ .scroll6{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll:hover{
+   animation: scroll-type6 3s linear infinite both;
+  }
+ }
+ .scroll6_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll6_5:hover{
+   animation: scroll-type6_5 3s linear infinite both;
+  }
+ }
+ .scroll7{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll7:hover{
+   animation: scroll-type7 3s linear infinite both;
+  }
+ }
+ .scroll7_5{
+  animation: none;
+ }
+ @media (hover:hover){
+  .scroll7_5:hover{
+   animation: scroll-type7_5 3s linear infinite both;
+  }
+ }
+}
