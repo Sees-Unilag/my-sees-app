@@ -9,7 +9,7 @@
 
 .text_logo {
   display: flex;
-  padding-right: 40px;
+  padding-right: 10px;
   align-items: center;
 }
 
@@ -100,6 +100,17 @@
   border-radius: 9px;
   background: linear-gradient(135deg, #92d729 0%, #36ce8a 100%);
 }
+
+.Courses a {
+  text-decoration: none;
+  color: var(--dark-blue-primary, #011d35);
+  font-style: normal;
+  font-size: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 @media only screen and (max-width: 1250px) {
   .dropdown {
     position: relative;
@@ -170,7 +181,20 @@
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 320px) {
+  .text_logo {
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+  }
+  .Courses {
+    display: inline-flex;
+    padding: 8px 2px;
+    align-items: flex-start;
+    gap: 11px;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #92d729 0%, #36ce8a 100%);
+  }
   .dropdown {
     position: relative;
     display: block;
@@ -205,5 +229,3 @@
     line-height: normal;
   }
 }
-
-

@@ -16,47 +16,11 @@ export const Header = () => {
       <div className={styles.text_logo}>
         <a href="/">MY ELECTRICAL APP</a>
       </div>
-      <div>
-        <ul className={styles.menu}>
-          {/* <li style={{ paddingTop: "20px" }}>
-            <a href="#Social">Social</a>
-          </li>
-          <li style={{ paddingTop: "20px" }}>
-            <a href="#News">News</a>
-          </li>
-          <li style={{ paddingTop: "20px" }}>
-            <a href="#Business">Business</a>
-  </li>*/}
-          <li style={{ paddingTop: "10px" }}>
-            <button title="Toggle Dropdown" className={styles.Courses}>
-              <a href="#Courses">Courses</a>
-            </button>
-          </li>
-        </ul>
-      </div>
 
-      <div className={styles.dropdown}>
-        <button onClick={toggleDropdown} className={styles.dropdownToggle}>
-          <FaChevronDown className="dropdownIcon" />
+      <div>
+        <button className={styles.Courses}>
+          <a href="#Courses">Courses</a>
         </button>
-        {isDropdownOpen && (
-          <ul className={styles.dropdownMenu}>
-            {/* <li>
-              <a href="/Social">Social</a>
-            </li>
-            <li>
-              <a href="/News">News</a>
-            </li>
-            <li>
-              <a href="/Business">Business</a>
-        </li>*/}
-            <li style={{ paddingTop: "10px" }}>
-              <button className={styles.Courses}>
-                <a href="#Courses">Courses</a>
-              </button>
-            </li>
-          </ul>
-        )}
       </div>
     </nav>
   );
