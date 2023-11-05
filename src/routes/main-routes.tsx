@@ -11,6 +11,7 @@ import Upload from "../pages/uploads/Upload";
 import Notification from "../pages/notification/Notification";
 import Levels from "../pages/programmeLevels/ProgrammeLevels";
 import { Level } from "../pages/level";
+import Resources from "../pages/Resources/Resources";
 
 export const MainRoutes = () => {
   return (
@@ -20,6 +21,7 @@ export const MainRoutes = () => {
           <Route index path="/" element={<Home />} />
           <Route path="/levels" element={<Levels />} />
           <Route path="/levels/:year" element={<Level />} />
+          <Route path="/resources/:id" element={<Resources />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/notification" element={<Notification />} />
         </Route>
