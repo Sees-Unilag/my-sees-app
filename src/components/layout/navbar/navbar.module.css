@@ -71,14 +71,14 @@ ul{
  object-fit: cover;
  margin-bottom: 0.25rem;
 }
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 767px){
   .navUl{
     padding: 0.75rem 0;
     width: 90%;
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 768px){
 	.aside{
   width: fit-content !important;
   height: 100dvh;
