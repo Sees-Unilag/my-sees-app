@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, } from "react-router-dom";
 import styles from "./level.module.css";
 import { Course, Loader } from "../../components";
 import { semesters, allYears } from "../../mock-data";
@@ -27,7 +27,6 @@ export const Level = () => {
   if (error) console.error(error);
 
   const courses = data ? data.data : [];
-
   const getYearName = (yearValue: string) => {
     const filtredYear = allYears.filter(({ name, value }) => {
       return yearValue == value;
@@ -92,7 +91,7 @@ export const Level = () => {
           </div>
           <div>
             {courses.map((course: any, index: number) => (
-              <Course {...course} />
+              <Course {...course} key={index} />
             ))}
           </div>
         </section>

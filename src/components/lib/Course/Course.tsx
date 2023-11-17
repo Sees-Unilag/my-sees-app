@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./course.module.css";
-import { useRef, useState, useEffect, useCallback } from "react";
+import {  useState, useEffect, useCallback } from "react";
 import aniStyles from "./animation.module.css";
+import {  useNavigate } from "react-router-dom";
 
 export const Course: React.FC<any> = (course) => {
+  const navigate = useNavigate()
   // state reprensenting the width of the course name container
   const [containerWidth, setContainerWidth] = useState(0);
   // state reprensenting the width of course name
@@ -98,11 +100,16 @@ export const Course: React.FC<any> = (course) => {
     }
   }
 
+  function GoToResouces(value: string){
+    console.log(`resources/${value}`)
+    navigate(`/resources/${value}`)
+  }
+
   return (
     <div
       className={`d-flex justify-content-between align-items-center ${styles.courseContainer}`}
     >
-      <div ref={measuredContainerRef} className={`${styles.courseNameDiv}`}>
+      <div ref={measuredContainerRef} className={`${styles.courseNameDiv}`} onClick={() => GoToResouces(course.id)}>
         <div
           ref={measuredWidthRef}
           className={`${styles.courseNameContainer} ${scroll ? scrollAni : ""}`}
